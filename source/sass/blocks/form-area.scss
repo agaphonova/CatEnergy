@@ -1,0 +1,18 @@
+.form__contacts-item {
+  margin-bottom: 14px;
+}
+
+.form-area__label,
+.form-area__input {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.form-area__input {
+  padding: 14px 14px;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+}

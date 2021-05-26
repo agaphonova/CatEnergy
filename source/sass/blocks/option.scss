@@ -1,0 +1,16 @@
+.option {
+  margin-bottom: 13px;
+}
+
+.option__label {
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &--diet {
+    color: $special-dark-grey-2;
+  }
+
+  &--extra {
+    color: $basic-black;
+  }
+}

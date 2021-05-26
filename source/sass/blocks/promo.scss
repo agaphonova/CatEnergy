@@ -1,0 +1,157 @@
+.promo {
+  color: $basic-white;
+  background: url("/img/promo-cat.jpg");
+  // background-color: rgba(104, 183, 56, 0.85);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background: rgba(104, 183, 56, 0.85);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  @media (min-width: 450px) {
+    background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    height: 838px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: none;
+    }
+
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+    margin: 0;
+    margin-bottom: 280px;
+    padding-left: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -223px;
+      right: -554px;
+      width: 882px;
+      height: 694px;
+      background: url("/img/cat-food-big.png") no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    align-items: flex-start;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 708px;
+      height: 609px;
+      background: url("/img/cat-food-middle.jpg") no-repeat;
+      top: 253px;
+      left: 22px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 1220px;
+    // margin-bottom: 267px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: none;
+    }
+  }
+}
+
+.promo__title {
+@include style-reset;
+
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-top: 27px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: 450px) {
+    color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include style-reset;
+
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+    text-align: left;
+    margin-bottom: 41px;
+  }
+}
+
+.promo__subtitle {
+  display: block;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: 450px) {
+    color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 49px;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.promo__button {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
+}

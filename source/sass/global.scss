@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $special-dark-grey;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
