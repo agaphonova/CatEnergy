@@ -1,7 +1,5 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Агафонова Елена](https://up.htmlacademy.ru/adaptive/22/user/1703485).
-* Наставник: [Геннадий Максимов](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
